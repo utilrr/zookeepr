@@ -9,7 +9,6 @@ const app = express();
 // Middleware goes here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 // Serve static pages
 app.use(express.static("public"));
 
@@ -110,6 +109,12 @@ app.get("/api/animals/:id", (req, res) => {
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/index.html"));
+});
+app.get("/animals", (req, res) => {
+  res.sendFile(path.join(__dirname, "./public/animals.html"));
+});
+app.get("/zookeepers", (req, res) => {
+  res.sendFile(path.join(__dirname, "./public/zookeepers.html"));
 });
 
 // Added POST route to animal endpoint
