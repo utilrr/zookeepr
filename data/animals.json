@@ -144,6 +144,24 @@
         "hungry"
       ],
       "id": "14"
+    },
+    {
+      "name": "Bobby",
+      "species": "baboon",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "15"
+    },
+    {
+      "name": "Betty",
+      "species": "baboon",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "16"
     }
   ]
 }

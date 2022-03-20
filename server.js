@@ -1,17 +1,19 @@
 const fs = require("fs");
 const path = require("path");
 const express = require("express");
+const { animals } = require("./data/animals");
+
 const PORT = process.env.PORT || 3001;
 const app = express();
-// parse incoming string or array data
+
+// Middleware goes here
 app.use(express.urlencoded({ extended: true }));
-// parse incoming JSON data
 app.use(express.json());
-const { animals } = require("./data/animals");
+
 // Serve static pages
 app.use(express.static("public"));
 
-// functions go here
+// Functions go here
 function filterByQuery(query, animalsArray) {
   let personalityTraitsArray = [];
   // Note that we save the animalsArray as filteredResults here:
@@ -88,7 +90,7 @@ function validateAnimal(animal) {
   return true;
 }
 
-// app.___'s go here
+// app.get routes go here
 app.get("/api/animals", (req, res) => {
   let results = animals;
   if (req.query) {
@@ -110,6 +112,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
+// Added POST route to animal endpoint
 app.post("/api/animals", (req, res) => {
   // set id based on what the next index of the array will be
   req.body.id = animals.length.toString();
