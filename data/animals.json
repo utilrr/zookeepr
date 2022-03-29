@@ -180,6 +180,23 @@
         "hungry"
       ],
       "id": "18"
+    },
+    {
+      "name": "TEST ANIMAL",
+      "species": "TEST SPECIES",
+      "diet": "piscivore",
+      "personalityTraits": [
+        "anxious"
+      ],
+      "id": "19"
+    },
+    {
+      "name": "Darlene",
+      "id": "jhgdja3ng2"
+    },
+    {
+      "name": "Darlene",
+      "id": "jhgdja3ng2"
     }
   ]
 }
