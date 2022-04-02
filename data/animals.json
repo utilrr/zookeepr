@@ -162,6 +162,34 @@
         "hungry"
       ],
       "id": "16"
+    },
+    {
+      "name": "Harold",
+      "species": "Hippo",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "17"
+    },
+    {
+      "name": "Harold",
+      "species": "hippo",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "18"
+    },
+    {
+      "name": "TEST ANIMAL",
+      "species": "TEST SPECIES",
+      "diet": "piscivore",
+      "personalityTraits": [
+        "anxious"
+      ],
+      "id": "19"
     }
+
   ]
 }
